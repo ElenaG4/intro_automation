@@ -1,0 +1,125 @@
+{
+  "id": "06999098-2130-439a-9d3d-4b3a66b12b64",
+  "version": "2.0",
+  "name": "yahoo",
+  "url": "https://espanol.yahoo.com",
+  "tests": [{
+    "id": "6df774db-09e7-4204-a33b-04548bea8b51",
+    "name": "busqueda_yahoo",
+    "commands": [{
+      "id": "620237c3-1f8b-481b-9749-634184c43567",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "58d108be-5eab-4b30-8c18-c7e5dc0bbb88",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "814x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df55108d-cd3c-45bc-b77d-c9056bd2513d",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Noticias",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d60dd042-c1fd-424a-802f-7505e42c0c55",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=uh-search-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7b2c365c-9c86-47d6-b55d-5b2484ade471",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=uh-search-box",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f55f0b3-aad9-44e7-bf34-c21e55da238e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Noticias",
+      "targets": [
+        ["linkText=Noticias", "linkText"],
+        ["css=.D\\(ib\\):nth-child(2) > .Fz\\(14px\\)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Noticias')])[2]", "xpath:link"],
+        ["xpath=//div[@id='mega-bottombar']/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://es-us.noticias.yahoo.com/')])[3]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6b7f3e2-c089-4f64-8eb2-c3a29e91f645",
+      "comment": "",
+      "command": "click",
+      "target": "id=uh-search-box",
+      "targets": [
+        ["id=uh-search-box", "id"],
+        ["name=p", "name"],
+        ["css=#uh-search-box", "css:finder"],
+        ["xpath=//input[@id='uh-search-box']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1554831269160_710']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "196c0005-42ba-46f8-83ed-684bbb65baae",
+      "comment": "",
+      "command": "click",
+      "target": "id=uh-search-box",
+      "targets": [
+        ["id=uh-search-box", "id"],
+        ["name=p", "name"],
+        ["css=#uh-search-box", "css:finder"],
+        ["xpath=//input[@id='uh-search-box']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1554831269160_710']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fb0ab1eb-f9ce-4cdd-9a5d-320fabd16595",
+      "comment": "",
+      "command": "type",
+      "target": "id=uh-search-box",
+      "targets": [
+        ["id=uh-search-box", "id"],
+        ["name=p", "name"],
+        ["css=#uh-search-box", "css:finder"],
+        ["xpath=//input[@id='uh-search-box']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1554831269160_710']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "deportes"
+    }, {
+      "id": "70262c24-41dd-4fbf-881f-2aefffdd8e64",
+      "comment": "",
+      "command": "click",
+      "target": "id=uh-search-button",
+      "targets": [
+        ["id=uh-search-button", "id"],
+        ["css=#uh-search-button", "css:finder"],
+        ["xpath=//button[@id='uh-search-button']", "xpath:attributes"],
+        ["xpath=//td[@id='yui_3_18_0_3_1554831269160_733']/button", "xpath:idRelative"],
+        ["xpath=//td[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "3834bb51-db64-4166-8d78-5032dafd563c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6df774db-09e7-4204-a33b-04548bea8b51"]
+  }],
+  "urls": ["https://espanol.yahoo.com/"],
+  "plugins": []
+}

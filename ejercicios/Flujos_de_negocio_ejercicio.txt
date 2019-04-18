@@ -1,0 +1,20 @@
+FLUJOS DE NEGOCIOS
+- Login
+- Logout desde Home
+- Logout desde About
+- Logout desde Contact
+- Logout desde Songs
+- Logout desde creacion nueva cancion
+- Logout desde consulta cancion
+- Acceso a Home
+- Acceso about
+- Acceso Contact
+- Acceso Songs
+- Enviar mensaje a contact
+- Crear una nueva cancion
+- Consultar una cancion
+- Editar una cacion
+- Borrar una cancion
+- Darle like a una cancion 
+- validaciones de campos de formulario crear cancion
+- validaciones de campos formulario contact
