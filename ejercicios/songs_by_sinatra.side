@@ -1,0 +1,216 @@
+{
+  "id": "f79066b0-83c0-4cf1-8559-7362b7c7a4bd",
+  "version": "2.0",
+  "name": "songs by sinatra",
+  "url": "https://songs-by-sinatra.herokuapp.com",
+  "tests": [{
+    "id": "18703638-40ac-4180-943b-609352214d28",
+    "name": "like a song",
+    "commands": [{
+      "id": "5ce96bf7-92bd-412e-abd4-360372807225",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d7379edc-213a-4192-9b01-bcdd63426fea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1348x728",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4ad60f1-bd15-4ae8-802f-37ea050a1bb3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Songs",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbe81244-a9d4-49f2-ab6d-4caf27dfaa27",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=log in",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0067e414-34bc-4e6e-9bb7-d4735a322afe",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=log in",
+      "targets": [
+        ["linkText=log in", "linkText"],
+        ["css=footer > a", "css:finder"],
+        ["xpath=//a[contains(text(),'log in')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/login')]", "xpath:href"],
+        ["xpath=//footer/a", "xpath:position"],
+        ["xpath=//a[contains(.,'log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ece3414-4337-4b66-91ff-0e1a126da0ff",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=username",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df4013d7-ecb7-4e53-b85a-6d407edd72bc",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=password",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c92f70c0-4b12-4365-bc36-ad7e8cdafd8b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//input[@value='Log In']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fa9c00b4-3408-4218-9f83-c36fe6fc53d2",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa042adb-7ac5-41cb-b331-9a3c69f268a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "frank"
+    }, {
+      "id": "4d5f6110-ce8a-4cc0-b34e-e4dde5c13d4d",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b678664b-cfcd-4004-af9a-78dce0506a2c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "sinatra"
+    }, {
+      "id": "e130e0c3-2e31-481d-b9da-5b2014c2f7c9",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Log In']",
+      "targets": [
+        ["css=input:nth-child(5)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6027248-39b4-4f2a-a8a4-9cddb01190e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8df5323a-e17f-4cf6-9f3a-f9b2565f4f2a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43835769-039b-4aa9-8b30-227be98c01b8",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "linkText=Songs",
+      "targets": [
+        ["linkText=Songs", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Songs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/songs')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Songs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d8a66dc-1fd5-42f6-b9fd-5ee8743316ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kilometros",
+      "targets": [
+        ["linkText=Kilometros", "linkText"],
+        ["css=li:nth-child(16) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Kilometros')]", "xpath:link"],
+        ["xpath=//ul[@id='songs']/li[16]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/songs/315')]", "xpath:href"],
+        ["xpath=//li[16]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kilometros')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3631668-4177-41f0-afc5-3f0cc87bb650",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@value='Like']",
+      "targets": [
+        ["css=form:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@value='Like']", "xpath:attributes"],
+        ["xpath=//div[@id='like']/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "88c3699a-6b40-4a62-bda7-e61de018d3e6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["18703638-40ac-4180-943b-609352214d28"]
+  }],
+  "urls": ["https://songs-by-sinatra.herokuapp.com/"],
+  "plugins": []
+}
